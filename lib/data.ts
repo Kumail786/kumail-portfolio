@@ -66,7 +66,7 @@ export type Job = {
 
 export const experience: Job[] = [
   {
-    role: "Applied AI / Senior Software Engineer",
+    role: "Senior Applied AI Engineer",
     company: "Expedey",
     type: "Full time",
     period: "Jan 2023 – Present",
