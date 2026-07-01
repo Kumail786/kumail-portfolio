@@ -136,6 +136,13 @@ export const projects: Project[] = [
     accent: "from-violet-500/25 to-fuchsia-400/10",
   },
   {
+    name: "Arcade",
+    blurb:
+      "An AI native collaborative OS for augmented marketing intelligence, the platform h2's intelligence modules run on. Orchestrates multiple AI providers with planner based routing, multi agent coordination, deep research, and real time collaboration, in daily production.",
+    tags: ["Next.js", "FastAPI", "AWS Bedrock + Gemini", "MongoDB", "WebSockets"],
+    accent: "from-orange-500/25 to-amber-400/10",
+  },
+  {
     name: "Dextruss",
     blurb:
       "An enterprise AI agent platform running a hosted agent loop on AWS Bedrock AgentCore, with AG2/AutoGen orchestration and live streaming interfaces.",
