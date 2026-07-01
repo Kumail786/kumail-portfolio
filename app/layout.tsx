@@ -16,33 +16,35 @@ const SITE = "https://kumail-portfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: "Kumail Raza | Senior Software Engineer, Full Stack & AI",
+  title: "Kumail Raza | Applied AI & Full Stack Engineer",
   description:
-    "Senior Software Engineer with 7+ years building scalable SaaS platforms and AI products. Full stack (Next.js, React, Python) and applied AI on AWS. Open to remote roles.",
+    "Applied AI engineer with 7+ years in software, building agentic and LLM powered products in production on AWS Bedrock, Gemini, LangGraph, and AG2/AutoGen, with strong full stack and cloud foundations. Open to remote roles.",
   keywords: [
     "Kumail Raza",
-    "Senior Software Engineer",
-    "Full Stack Developer",
+    "Applied AI Engineer",
     "AI Engineer",
+    "LLM",
+    "Agentic AI",
+    "LangGraph",
+    "AWS Bedrock",
+    "Full Stack Developer",
     "Next.js",
-    "React",
     "Python",
-    "AWS",
     "Remote",
   ],
   authors: [{ name: "Kumail Raza" }],
   openGraph: {
-    title: "Kumail Raza | Senior Software Engineer, Full Stack & AI",
+    title: "Kumail Raza | Applied AI & Full Stack Engineer",
     description:
-      "Building scalable software and AI products. Full stack plus applied AI on AWS. Open to remote roles.",
+      "Building agentic and LLM powered products in production, with strong full stack and cloud foundations. Open to remote roles.",
     url: SITE,
     siteName: "Kumail Raza",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kumail Raza | Senior Software Engineer",
-    description: "Full stack and AI engineer building scalable software and AI products.",
+    title: "Kumail Raza | Applied AI & Full Stack Engineer",
+    description: "Applied AI engineer building agentic and LLM powered products in production.",
   },
 };
 

@@ -1,11 +1,11 @@
 export const profile = {
   name: "Kumail Raza",
-  role: "Senior Software Engineer",
-  focus: "Full Stack & AI Engineering",
+  role: "Applied AI Engineer",
+  focus: "Senior Full Stack Engineer",
   tagline:
-    "I build fast, reliable software and AI products that turn complex business problems into clean, elegant solutions.",
+    "I build agentic and LLM powered products in production, turning complex business problems into reliable, intelligent systems.",
   location: "Karachi, Pakistan",
-  availability: "Open to remote roles in the US, UK, Europe, and Canada",
+  availability: "Open to remote roles worldwide",
   yearsExperience: "7+",
   email: "kumailrawjani900@gmail.com",
   links: {
@@ -17,31 +17,31 @@ export const profile = {
 
 export const stats = [
   { value: "7+", label: "Years building software" },
-  { value: "5", label: "Companies across US & PK" },
+  { value: "AI", label: "Agentic systems in production" },
   { value: "15+", label: "Products shipped" },
-  { value: "AI", label: "Agentic systems on AWS" },
+  { value: "5", label: "Companies worked with" },
 ];
 
 export const skillGroups: { title: string; items: string[] }[] = [
+  {
+    title: "AI / LLM",
+    items: ["AWS Bedrock (Claude)", "Google Gemini", "LangGraph", "AG2 / AutoGen", "RAG", "Multi-agent"],
+  },
+  {
+    title: "AI Infra & Data",
+    items: ["Vector search", "Embeddings", "Retrieval", "LangSmith", "PostgreSQL", "MongoDB"],
+  },
+  {
+    title: "Backend",
+    items: ["Python", "FastAPI", "Node.js", "Express", "REST APIs", "WebSockets"],
+  },
   {
     title: "Frontend",
     items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"],
   },
   {
-    title: "Backend",
-    items: ["Node.js", "Express", "Python", "FastAPI", "REST APIs", "WebSockets"],
-  },
-  {
-    title: "AI / LLM",
-    items: ["AWS Bedrock (Claude)", "LangGraph", "AG2 / AutoGen", "Pydantic AI", "RAG", "Agentic systems"],
-  },
-  {
     title: "Cloud & DevOps",
     items: ["AWS (CDK, ECS, RDS)", "Cognito / OIDC", "Docker", "Kubernetes", "GCP", "CI/CD"],
-  },
-  {
-    title: "Data",
-    items: ["PostgreSQL", "Drizzle ORM", "SQLModel", "Redis", "Migrations", "Multi tenancy"],
   },
   {
     title: "Practices",
@@ -50,8 +50,8 @@ export const skillGroups: { title: string; items: string[] }[] = [
 ];
 
 export const marqueeSkills = [
-  "TypeScript", "React", "Next.js", "Node.js", "Python", "FastAPI", "AWS", "Bedrock",
-  "LangGraph", "PostgreSQL", "Docker", "Kubernetes", "Tailwind", "Turborepo", "AG2 / AutoGen", "GCP",
+  "AWS Bedrock", "Claude", "Gemini", "LangGraph", "AG2 / AutoGen", "RAG", "Agents", "Python",
+  "FastAPI", "TypeScript", "React", "Next.js", "PostgreSQL", "MongoDB", "AWS", "Docker",
 ];
 
 export type Job = {
@@ -66,38 +66,38 @@ export type Job = {
 
 export const experience: Job[] = [
   {
-    role: "Senior Software Engineer",
+    role: "Applied AI / Senior Software Engineer",
     company: "Expedey",
     type: "Full time",
     period: "Jan 2023 – Present",
     location: "Karachi, Pakistan",
     current: true,
     points: [
-      "Design and ship scalable SaaS platforms and AI products end to end, covering solution architecture, system design, development, testing, and deployment.",
-      "Build agentic AI systems on AWS Bedrock (Claude) with LangGraph and AG2/AutoGen, including orchestration, streaming, tool calling, and RAG grounded in client data.",
+      "Build agentic AI systems on AWS Bedrock (Claude) and Gemini with LangGraph and AG2/AutoGen: multi agent orchestration, planner based routing, streaming, tool calling, and RAG grounded in client data.",
+      "Ship AI products and scalable SaaS platforms end to end, from model selection and architecture through development, testing, deployment, and performance.",
       "Own cloud infrastructure with AWS CDK across multiple accounts (ECS Fargate, RDS, Cognito, S3) and enterprise auth with single sign on across multiple providers.",
-      "Partner directly with clients to translate business goals into reliable, maintainable systems that create measurable value.",
+      "Partner directly with clients to turn business goals into reliable, observable AI systems that create measurable value.",
     ],
   },
   {
     role: "Software Developer",
     company: "Kokopelli",
-    type: "Full time · Remote",
+    type: "Full time",
     period: "Jan 2022 – Nov 2022",
-    location: "United States",
+    location: "Remote",
     points: [
-      "Built and maintained full stack web applications for a US product team, working fully remote across time zones.",
+      "Built and maintained full stack web applications for a product team, working fully remote across time zones.",
       "Delivered features across the stack with modern JavaScript frameworks and cloud hosted back ends.",
     ],
   },
   {
     role: "Software Engineer",
     company: "trades.org",
-    type: "Full time · Remote",
+    type: "Full time",
     period: "Dec 2020 – Dec 2021",
-    location: "United States",
+    location: "Remote",
     points: [
-      "Engineered frontend and backend features for a US web platform.",
+      "Engineered frontend and backend features for a web platform.",
       "Focused on performance, reliability, and clean, maintainable code.",
     ],
   },
@@ -159,17 +159,10 @@ export const projects: Project[] = [
   {
     name: "trades.org",
     blurb:
-      "A US web platform I engineered across the stack, with a focus on performance, reliability, and maintainability.",
+      "A web platform I engineered across the stack, with a focus on performance, reliability, and maintainability.",
     tags: ["JavaScript", "Full Stack", "Web"],
     href: "https://trades.org",
     accent: "from-blue-500/25 to-indigo-400/10",
-  },
-  {
-    name: "Merlin & ES Landing",
-    blurb:
-      "Marketing sites and landing pages that convert, crafted, animated, and tuned for speed.",
-    tags: ["Next.js", "Tailwind", "Framer Motion"],
-    accent: "from-rose-500/25 to-pink-400/10",
   },
 ];
 
