@@ -16,13 +16,13 @@ const SITE = "https://kumail-portfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: "Kumail Raza — Senior Software Engineer | Full-Stack & AI",
+  title: "Kumail Raza | Senior Software Engineer, Full Stack & AI",
   description:
-    "Senior Software Engineer with 7+ years building scalable SaaS platforms and AI-powered products. Full-stack (Next.js, React, Python) and applied AI on AWS. Open to remote roles.",
+    "Senior Software Engineer with 7+ years building scalable SaaS platforms and AI products. Full stack (Next.js, React, Python) and applied AI on AWS. Open to remote roles.",
   keywords: [
     "Kumail Raza",
     "Senior Software Engineer",
-    "Full-Stack Developer",
+    "Full Stack Developer",
     "AI Engineer",
     "Next.js",
     "React",
@@ -32,17 +32,17 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Kumail Raza" }],
   openGraph: {
-    title: "Kumail Raza — Senior Software Engineer | Full-Stack & AI",
+    title: "Kumail Raza | Senior Software Engineer, Full Stack & AI",
     description:
-      "Building scalable software and AI-powered products. Full-stack + applied AI on AWS. Open to remote roles.",
+      "Building scalable software and AI products. Full stack plus applied AI on AWS. Open to remote roles.",
     url: SITE,
     siteName: "Kumail Raza",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kumail Raza — Senior Software Engineer",
-    description: "Full-stack + AI engineer. Building scalable software & AI products.",
+    title: "Kumail Raza | Senior Software Engineer",
+    description: "Full stack and AI engineer building scalable software and AI products.",
   },
 };
 

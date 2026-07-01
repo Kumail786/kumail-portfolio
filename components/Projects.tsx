@@ -12,7 +12,7 @@ export function Projects() {
         <SectionHeading
           eyebrow="Selected Work"
           title="Products I've helped build."
-          sub="A mix of AI platforms, SaaS products, and web experiences — spanning research, agents, and citizen engagement."
+          sub="AI platforms, SaaS products, and web experiences across research, agents, and more."
         />
 
         <div className="grid gap-5 md:grid-cols-2">

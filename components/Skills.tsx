@@ -9,8 +9,8 @@ export function Skills() {
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="Skills"
-          title="A full-stack toolkit, AI-first."
-          sub="From pixel-perfect front ends to cloud infrastructure and agentic AI — the tools I reach for to build products that last."
+          title="A full stack toolkit, AI first."
+          sub="From polished front ends to cloud infrastructure and agentic AI, the tools I reach for to build products that last."
         />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

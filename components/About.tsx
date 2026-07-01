@@ -5,9 +5,9 @@ import { education, certifications } from "@/lib/data";
 import { GraduationCap, BadgeCheck } from "lucide-react";
 
 const paragraphs = [
-  "I'm a Senior Software Engineer with 7+ years designing and shipping scalable, high-performance software — web apps, SaaS platforms, enterprise systems, cloud-native services, and AI-powered products.",
-  "My work spans the entire lifecycle: solution architecture and system design, development and testing, deployment, and performance optimization. I work closely with clients to translate business goals into reliable systems that create measurable value.",
-  "Lately I'm focused on applied AI — building agentic systems that plan, decide, and act, grounded in real data and designed to be trustworthy, observable, and secure.",
+  "I'm a Senior Software Engineer with 7+ years designing and shipping scalable software. My work spans web apps, SaaS platforms, enterprise systems, cloud services, and AI products.",
+  "I cover the whole lifecycle: architecture and system design, development and testing, deployment, and performance. I work closely with clients to translate business goals into reliable systems that create real value.",
+  "Lately I'm focused on applied AI, building agentic systems that plan, decide, and act. They stay grounded in real data and are designed to be trustworthy, observable, and secure.",
 ];
 
 export function About() {

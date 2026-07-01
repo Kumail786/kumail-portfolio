@@ -33,8 +33,8 @@ export function Contact() {
                 <span className="gradient-text">worth shipping.</span>
               </h2>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-                Open to remote full-time roles and freelance projects with teams in the US, UK,
-                Europe, and Canada. I usually reply within a day.
+                Open to remote roles and freelance projects with teams in the US, UK, Europe,
+                and Canada. I usually reply within a day.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">

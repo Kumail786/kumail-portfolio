@@ -10,7 +10,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Seven years, five teams, two continents."
-          sub="Building for startups and US product teams — remote-first, delivery-focused."
+          sub="Building for startups and US product teams. Remote first, focused on delivery."
         />
 
         <div className="relative">
