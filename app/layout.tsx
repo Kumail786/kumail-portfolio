@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE = "https://kumail-portfolio.vercel.app";
+const SITE = "https://kumail-portfolio-three.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
