@@ -7,8 +7,7 @@ export const profile = {
   location: "Karachi, Pakistan",
   availability: "Open to remote roles — US · UK · EU · Canada",
   yearsExperience: "7+",
-  // TODO: replace with your real email before sharing widely
-  email: "hello@kumailraza.dev",
+  email: "kumailrawjani900@gmail.com",
   links: {
     github: "https://github.com/Kumail786",
     linkedin: "https://www.linkedin.com/in/kumail-raza-rawjani",
