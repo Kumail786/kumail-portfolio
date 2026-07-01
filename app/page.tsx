@@ -21,7 +21,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
-      <footer className="border-t border-white/10 px-4 py-8">
+      <footer className="border-t border-black/10 px-4 py-8">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 text-sm text-muted sm:flex-row">
           <p>
             © {new Date().getFullYear()} {profile.name}. Built with Next.js & Framer Motion.

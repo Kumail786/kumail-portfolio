@@ -37,7 +37,7 @@ export function Skills() {
           {[...marqueeSkills, ...marqueeSkills].map((s, i) => (
             <span
               key={i}
-              className="whitespace-nowrap text-lg font-medium text-white/25 transition-colors"
+              className="whitespace-nowrap text-lg font-medium text-foreground/20 transition-colors"
             >
               {s} <span className="px-2 text-accent/40">/</span>
             </span>

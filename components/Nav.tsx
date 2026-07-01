@@ -33,11 +33,11 @@ export function Nav() {
     >
       <nav
         className={`flex w-full max-w-5xl items-center justify-between rounded-2xl px-4 py-3 transition-all duration-300 sm:px-6 ${
-          scrolled ? "glass shadow-lg shadow-black/20" : "border border-transparent"
+          scrolled ? "glass" : "border border-transparent"
         }`}
       >
         <a href="#top" className="group flex items-center gap-2 font-semibold tracking-tight">
-          <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-accent to-accent-2 text-sm font-bold text-black">
+          <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-accent to-accent-2 text-sm font-bold text-white shadow-sm shadow-accent/30">
             KR
           </span>
           <span className="hidden sm:inline">Kumail Raza</span>
@@ -48,7 +48,7 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="rounded-lg px-3 py-2 text-sm text-muted transition-colors hover:text-foreground"
+              className="rounded-lg px-3 py-2 text-sm text-muted transition-colors hover:text-accent"
             >
               {l.label}
             </a>
@@ -60,13 +60,13 @@ export function Nav() {
             href={profile.links.github}
             target="_blank"
             rel="noreferrer"
-            className="hidden rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-medium transition-all hover:border-accent/40 hover:text-accent sm:inline-block"
+            className="hidden rounded-lg border border-black/10 bg-white/70 px-4 py-2 text-sm font-medium transition-all hover:border-accent/50 hover:text-accent sm:inline-block"
           >
             GitHub
           </a>
           <button
             onClick={() => setOpen((v) => !v)}
-            className="grid h-9 w-9 place-items-center rounded-lg border border-white/10 bg-white/[0.04] md:hidden"
+            className="grid h-9 w-9 place-items-center rounded-lg border border-black/10 bg-white/70 md:hidden"
             aria-label="Toggle menu"
           >
             {open ? <X size={18} /> : <Menu size={18} />}
@@ -87,7 +87,7 @@ export function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-lg px-4 py-3 text-sm text-muted transition-colors hover:bg-white/5 hover:text-foreground"
+                className="block rounded-lg px-4 py-3 text-sm text-muted transition-colors hover:bg-black/5 hover:text-accent"
               >
                 {l.label}
               </a>

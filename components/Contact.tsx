@@ -40,7 +40,7 @@ export function Contact() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
                   href={`mailto:${profile.email}`}
-                  className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-accent to-accent-3 px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-[1.03]"
+                  className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-accent to-accent-3 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-transform hover:scale-[1.03]"
                 >
                   Say hello
                   <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -49,7 +49,7 @@ export function Contact() {
                   href={profile.links.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/12 bg-white/[0.03] px-6 py-3 text-sm font-semibold transition-colors hover:border-accent/40 hover:text-accent"
+                  className="inline-flex items-center gap-2 rounded-xl border border-black/10 bg-white/70 px-6 py-3 text-sm font-semibold transition-colors hover:border-accent/50 hover:text-accent"
                 >
                   Connect on LinkedIn
                 </a>
@@ -66,7 +66,7 @@ export function Contact() {
                       rel="noreferrer"
                       whileHover={{ x: 4 }}
                       transition={{ type: "spring", stiffness: 300, damping: 22 }}
-                      className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 transition-colors hover:border-accent/40"
+                      className="flex items-center gap-4 rounded-xl border border-black/10 bg-white/70 px-5 py-4 transition-colors hover:border-accent/50"
                       style={{ transitionDelay: `${i * 40}ms` }}
                     >
                       <span className="grid h-10 w-10 place-items-center rounded-lg bg-accent/10 text-accent">

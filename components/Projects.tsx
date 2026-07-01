@@ -40,7 +40,7 @@ export function Projects() {
                 transition={{ type: "spring", stiffness: 300, damping: 24 }}
                 className="card-glow glass group relative flex h-full w-full flex-col overflow-hidden rounded-2xl text-left"
               >
-                <div className="relative overflow-hidden border-b border-white/10">
+                <div className="relative overflow-hidden border-b border-black/10">
                   <Cover
                     slug={p.slug}
                     className="aspect-[16/9] w-full transition-transform duration-500 group-hover:scale-[1.04]"
@@ -105,7 +105,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
           <X size={18} />
         </button>
 
-        <Cover slug={project.slug} className="aspect-[16/9] w-full border-b border-white/10" />
+        <Cover slug={project.slug} className="aspect-[16/9] w-full border-b border-black/10" />
 
         <div className="p-6 sm:p-8">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-accent">{project.category}</p>
@@ -135,7 +135,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
               href={project.href}
               target="_blank"
               rel="noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-accent to-accent-3 px-5 py-2.5 text-sm font-semibold text-black transition-transform hover:scale-[1.03]"
+              className="mt-8 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-accent to-accent-3 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-transform hover:scale-[1.03]"
             >
               Visit site
               <ArrowUpRight size={16} />

@@ -15,7 +15,7 @@ export function Experience() {
 
         <div className="relative">
           {/* vertical line */}
-          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-accent/60 via-white/10 to-transparent md:left-[9px]" />
+          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-accent/60 via-black/10 to-transparent md:left-[9px]" />
 
           <div className="space-y-8">
             {experience.map((job, i) => (
@@ -24,7 +24,7 @@ export function Experience() {
                   {/* dot */}
                   <span
                     className={`absolute left-0 top-1.5 grid h-4 w-4 place-items-center rounded-full md:h-[18px] md:w-[18px] ${
-                      job.current ? "bg-accent" : "bg-white/20"
+                      job.current ? "bg-accent" : "bg-black/20"
                     }`}
                   >
                     {job.current && (

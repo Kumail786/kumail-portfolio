@@ -61,7 +61,7 @@ export function SectionHeading({
 
 export function Tag({ children }: { children: ReactNode }) {
   return (
-    <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-medium text-muted transition-colors hover:border-accent/40 hover:text-foreground">
+    <span className="rounded-full border border-black/10 bg-black/[0.035] px-3 py-1 text-xs font-medium text-muted transition-colors hover:border-accent/50 hover:bg-accent/10 hover:text-accent">
       {children}
     </span>
   );
