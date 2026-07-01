@@ -132,8 +132,14 @@ export const experience: Job[] = [
 ];
 
 export type Project = {
+  slug: string;
   name: string;
+  tagline: string;
+  category: string;
   blurb: string;
+  summary: string;
+  features: string[];
+  stack: string[];
   tags: string[];
   href?: string;
   accent: string;
@@ -141,37 +147,104 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "clea",
     name: "CLEA",
+    tagline: "Conversational research, automated by AI",
+    category: "Applied AI · Research",
     blurb:
-      "A conversational research platform that automates interviews with streaming LLM conversations and multimodal input across text, voice, and images.",
+      "A conversational research platform that runs interviews as streaming LLM conversations, with text, voice, and image input.",
+    summary:
+      "CLEA turns qualitative research interviews into natural, streaming conversations with an AI interviewer. Respondents reply by text, voice, or image, while an admin console lets researchers design studies and review results. I helped rebuild it from a validated prototype into a clean, production ready architecture.",
+    features: [
+      "Streaming LLM interviews on AWS Bedrock (Claude) that adapt in real time",
+      "Real time voice capture and transcription with AssemblyAI, plus text and image input",
+      "Separate admin console and respondent portal with internationalization",
+      "Turborepo monorepo: decoupled Next.js front end and Python FastAPI back end",
+      "PostgreSQL with SQLModel and disciplined Alembic migrations",
+      "Deployed on AWS ECS Fargate with S3 backed media",
+    ],
+    stack: ["Next.js", "React", "Python FastAPI", "AWS Bedrock (Claude)", "AssemblyAI", "PostgreSQL", "WebSockets", "AWS ECS", "Turborepo"],
     tags: ["Next.js", "FastAPI", "AWS Bedrock", "WebSockets"],
     accent: "from-violet-500/25 to-fuchsia-400/10",
   },
   {
+    slug: "arcade",
     name: "Arcade",
+    tagline: "AI native OS for augmented marketing intelligence",
+    category: "Applied AI · Platform",
     blurb:
-      "An AI native collaborative OS for augmented marketing intelligence, the platform h2's intelligence modules run on. Orchestrates multiple AI providers with planner based routing, multi agent coordination, deep research, and real time collaboration, in daily production.",
-    tags: ["Next.js", "FastAPI", "AWS Bedrock + Gemini", "MongoDB", "WebSockets"],
+      "The AI native collaborative OS that h2's intelligence modules run on, orchestrating multiple AI providers in daily production.",
+    summary:
+      "Arcade is the operating system for h2's augmented intelligence modules (BELA, CLEA, QORA, PIVO, DRIO). It manages a contextual hierarchy of organizations, workspaces, threads, and artifacts, and treats summarization as an orchestration layer that routes work across models. It is in daily production for the internal team, clients, and partners.",
+    features: [
+      "Multi provider AI: AWS Bedrock (Claude Sonnet and Haiku), Google Gemini, and Perplexity",
+      "Planner based routing with summarization as an orchestration layer",
+      "Real time collaboration: presence, typing indicators, and artifact locking",
+      "Deep Research panels with sources, reports, and follow ups",
+      "Rich text artifact editing (TipTap) with versioning and export",
+      "Role based access, Cognito auth, and sovereign private deployment",
+    ],
+    stack: ["Next.js", "React", "Redux", "Python FastAPI", "MongoDB", "AWS Bedrock", "Google Gemini", "Socket.io", "AWS Cognito", "LangSmith"],
+    tags: ["Next.js", "FastAPI", "Bedrock + Gemini", "MongoDB"],
     accent: "from-orange-500/25 to-amber-400/10",
   },
   {
+    slug: "dextruss",
     name: "Dextruss",
+    tagline: "Enterprise AI agent platform on Bedrock AgentCore",
+    category: "Applied AI · Agents",
     blurb:
-      "An enterprise AI agent platform running a hosted agent loop on AWS Bedrock AgentCore, with AG2/AutoGen orchestration and live streaming interfaces.",
-    tags: ["React 19", "Python", "Bedrock AgentCore", "AWS CDK"],
+      "A multi tenant AI agent platform running a hosted agent loop on AWS Bedrock AgentCore, with multi agent orchestration and streaming UIs.",
+    summary:
+      "Dextruss is an enterprise agent platform where a hosted agent loop runs on AWS Bedrock AgentCore and coordinates multiple agents with AG2/AutoGen. It streams results to chat and admin interfaces and runs across isolated dev, stage, and production AWS accounts with strong auth and observability.",
+    features: [
+      "Hosted agent loop on AWS Bedrock AgentCore with AG2/AutoGen multi agent orchestration",
+      "Live SSE streaming to chat and admin interfaces",
+      "Multi account infrastructure as code with AWS CDK (dev, stage, prod)",
+      "Cognito auth with Entra ID federation and user auto provisioning",
+      "Encrypted secret management and disciplined PostgreSQL migrations",
+      "Observability with OpenTelemetry, Pino, and Logfire",
+    ],
+    stack: ["Next.js 16", "React 19", "Python FastAPI", "AG2 / AutoGen", "Bedrock AgentCore", "AWS CDK", "AWS Cognito", "PostgreSQL"],
+    tags: ["React 19", "Bedrock AgentCore", "AG2 / AutoGen", "AWS CDK"],
     accent: "from-emerald-500/25 to-teal-400/10",
   },
   {
+    slug: "acttov",
     name: "Acttov",
+    tagline: "Serverless agent API driven by config",
+    category: "Applied AI · Agents",
     blurb:
-      "A serverless AI agent API with configuration driven execution that routes personas, functions, tasks, and tools through a LangGraph state machine.",
+      "A serverless, multi tenant agent API where configuration drives execution through a LangGraph state machine.",
+    summary:
+      "Acttov is a configuration driven agent backend: a single execution agent routes work through personas, functions, tasks, and tools using a LangGraph state machine, returning structured, streaming results. It is built for multi tenant use with careful secret handling and multi provider auth.",
+    features: [
+      "Configuration driven execution: personas route to functions, tasks, and tools",
+      "LangGraph state machine with structured, streaming results",
+      "AES-256-GCM secret encryption with key versioning and rotation",
+      "Multi provider auth (Cognito RS256 and ALB ES256 tokens)",
+      "Serverless deployment with AWS SAM, ECS Fargate, and an ALB",
+      "Type safe Python with ruff and mypy",
+    ],
+    stack: ["Python FastAPI", "LangGraph", "Pydantic AI", "AWS SAM", "ECS Fargate", "AWS Cognito", "PostgreSQL"],
     tags: ["FastAPI", "LangGraph", "Pydantic AI", "AWS SAM"],
     accent: "from-sky-500/25 to-cyan-400/10",
   },
   {
+    slug: "trades",
     name: "trades.org",
+    tagline: "Full stack web platform",
+    category: "Full Stack · Web",
     blurb:
       "A web platform I engineered across the stack, with a focus on performance, reliability, and maintainability.",
+    summary:
+      "trades.org is a web platform I contributed to across frontend and backend, delivering features with an eye on performance, reliability, and clean, maintainable code.",
+    features: [
+      "Frontend and backend feature development across the stack",
+      "Focus on performance and reliability",
+      "Clean, maintainable, well structured code",
+    ],
+    stack: ["JavaScript", "Frontend", "Backend", "Web"],
     tags: ["JavaScript", "Full Stack", "Web"],
     href: "https://trades.org",
     accent: "from-blue-500/25 to-indigo-400/10",
