@@ -19,7 +19,7 @@ export const stats = [
   { value: "7+", label: "Years building software" },
   { value: "AI", label: "Agentic systems in production" },
   { value: "15+", label: "Products shipped" },
-  { value: "5", label: "Companies worked with" },
+  { value: "6", label: "Companies worked with" },
 ];
 
 export const skillGroups: { title: string; items: string[] }[] = [
@@ -77,6 +77,18 @@ export const experience: Job[] = [
       "Ship AI products and scalable SaaS platforms end to end, from model selection and architecture through development, testing, deployment, and performance.",
       "Own cloud infrastructure with AWS CDK across multiple accounts (ECS Fargate, RDS, Cognito, S3) and enterprise auth with single sign on across multiple providers.",
       "Partner directly with clients to turn business goals into reliable, observable AI systems that create measurable value.",
+    ],
+  },
+  {
+    role: "AI Engineer",
+    company: "BetterFuture Labs",
+    type: "Contract",
+    period: "2025 – Present",
+    location: "Remote",
+    current: true,
+    points: [
+      "Build LLM powered features and agentic workflows, taking AI capabilities from prototype to production.",
+      "Collaborate remotely on applied AI products, integrating models, retrieval, and tooling into real user experiences.",
     ],
   },
   {
